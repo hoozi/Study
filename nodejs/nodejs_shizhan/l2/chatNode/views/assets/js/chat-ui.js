@@ -54,6 +54,11 @@ socket.on('joinResult', function(result) {
     $('#messages ul').append(divSystemContentElement('系统：欢迎进入'+result.room));
 });
 
+//下线
+socket.on('leaveRoom', function(result) {
+    $('#messages ul').append(divSystemContentElement(result.text));
+});
+
 //接收消息
 socket.on('message', function (message) {
     var newElement;
