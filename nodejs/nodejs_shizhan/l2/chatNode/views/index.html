@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Chat</title>
+	<meta name="author" content="Administrator" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/chat.css" />
+	<!-- Date: 2014-09-10 -->
+</head>
+<body>
+
+<div class="chat-wrap hfull">
+	<div class="chat-content full">
+		<div class="chat-room" id="room">dsadsa</div>
+		<div class="chat-area" id="messages">
+			<ul></ul>
+		</div>
+		<div class="chat-sub">
+			<div class="chat-bar wfull"></div>
+			<form id="send-form">
+				<textarea name="" id="send-message" class="db full"></textarea>
+				<input type="submit" id="send-button" value="发送" class="sub-chat-content db"/>
+			</form>
+		</div>
+	</div>
+	<div class="chat-user chat-list" id="room-list">
+		<ul>房间列表获取中...</ul>
+		<button id="up-room">更新房间列表</button>
+	</div>
+	<div class="ml">
+		<ul>
+			<li>更改昵称: /nick [昵称]</li>
+			<li>进入/创建房间: /join [房间名称]</li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript" src="socket.io/socket.io.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/chat.js"></script>
+<script type="text/javascript" src="/assets/js/chat-ui.js"></script>
+</body>
+</html>
+
