@@ -1,0 +1,49 @@
+CLP
+<div class="list radius">
+	<ul>
+		<li class="flex list-imp"><span class="field-name">码头</span><span class="field-value">{{sender}}--{{receiver}}</span></li>
+		<li class="flex list-imp"><span class="field-name">状态</span><span class="field-value">{{status}}</span></li>
+		<li class="flex list-imp"><span class="field-name">CLP录入时间</span><span class="field-value">{{clpTime}}</span></li>
+		<li class="flex list-imp"><span class="field-name">备注</span><span class="field-value">{{statusDesc}}</span></li>
+		<li class="flex list-imp"><span class="field-name">装箱单发往</span><span class="field-value">{{receiver}}</span></li>
+		{{#costcoMainDeo}}
+		<li class="flex"><span class="field-name">箱号</span><span class="field-value">{{ctnNo}}</span></li>
+		<li class="flex"><span class="field-name">船公司</span><span class="field-value">{{lineCode}}</span></li>
+		<li class="flex"><span class="field-name">英文船名/航次</span><span class="field-value">{{vessel}}/{{voyage}}</span></li>
+		<li class="flex"><span class="field-name">装货港</span><span class="field-value">{{loadPortCode}}</span></li>
+		<li class="flex"><span class="field-name">卸货港</span><span class="field-value">{{dischargePortCode}}</span></li>
+		<li class="flex"><span class="field-name">箱型尺寸</span><span class="field-value">{{sizetype}}</span></li>
+		<li class="flex"><span class="field-name">箱状态</span><span class="field-value">{{status}}</span></li>
+		<li class="flex"><span class="field-name">货总重</span><span class="field-value">-</span></li>
+		<li class="flex"><span class="field-name">铅封号</span><span class="field-value">{{sealNo}}</span></li>
+		<li class="flex"><span class="field-name">中转港</span><span class="field-value">{{tranportCode}}</span></li>
+		<li class="flex"><span class="field-name">交货港</span><span class="field-value">{{deliveryCode}}</span></li>
+		<li class="flex"><span class="field-name">进出口标志</span><span class="field-value">{{ioFlag}}</span></li>
+		<li class="flex"><span class="field-name">内外贸标志</span><span class="field-value">{{tradeFlag}}</span></li>
+		<li class="flex"><span class="field-name">装箱日期</span><span class="field-value">{{stuffingTime}}</span></li>
+		<li class="flex"><span class="field-name">箱主</span><span class="field-value">{{operatorCode}}</span></li>
+		<li class="flex"><span class="field-name">货代</span><span class="field-value">{{forwarder}}</span></li>
+		{{/costcoMainDeo}}
+	</ul>
+</div>
+
+无纸放行
+{{#del list}}
+<div class="list radius">
+	<ul>
+		<li class="flex"><span class="field-name">船名</span><span class="field-value">{{envessel}}</span></li>
+		<li class="flex"><span class="field-name">航次</span><span class="field-value">{{voyage}}</span></li>
+		<li class="flex"><span class="field-name">码头</span><span class="field-value">{{matou}}</span></li>
+		<li class="flex"><span class="field-name">箱号</span><span class="field-value">{{containerno}}</span></li>
+		<li class="flex"><span class="field-name">提单号</span><span class="field-value">{{billno}}</span></li>
+		<li class="flex"><span class="field-name">清洁舱单</span>{{#if @ifcsumFlag}}<span class="field-value has-icon"></span>{{else}}<span class="field-value no-pass">-</span>{{/if}}</li>
+		<li class="flex"><span class="field-name">运抵报告</span>{{#if @matouFlag}}<span class="field-value has-icon"></span>{{else}}<span class="field-value no-pass">{{matouRemark}}</span>{{/if}}</li>
+		<li class="flex"><span class="field-name">海关放行</span>{{#if @customFlag}}<span class="field-value has-icon"></span>{{else}}<span class="field-value no-pass">{{customRemark}}</span>{{/if}}</li>
+		<li class="flex"><span class="field-name">三联单</span>{{#if @sldFlag}}<span class="field-value has-icon"></span>{{else}}<span class="field-value no-pass">{{sldRemark}}</span>{{/if}}</li>
+		<li class="flex"><span class="field-name">能否放行</span><span class="field-value"><i class="db nos">{{@sendEnable}}</i><i class="db nos">{{compareTime}}</i></span></li>
+		<li class="flex"><span class="field-name">EDI发送状态</span><span class="field-value"><i class="db nos">{{@sendFlag}}</i><i class="db nos">{{sendTime}}</i></span></li>
+		<li class="flex"><span class="field-name">码头放行状态</span><span class="field-value"><i class="db nos">{{matou}}:{{@passFlag}}</i><i class="db nos">{{receivetime}}</i></span></li>
+	</ul>
+</div>
+{{/del}}
+

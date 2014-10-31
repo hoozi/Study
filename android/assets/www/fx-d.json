@@ -1,0 +1,50 @@
+[
+    {
+        "ctnCount": "1",
+        "ctnSizeType": "45GP",
+        "ctnrealseContainer": [
+            {
+                "ctnReleaseFlag": "Y",
+                "ctnReleasePrintFlag": "Y",
+                "ctnSize": "45",
+                "ctnType": "GP",
+                "ctnrealseCtnId": "CRC-0000000000080968",
+                "ctnrealseId": "CRM-0000000000039778",
+                "yardCode": "CML2"
+            },
+            {
+                "ctnReleaseFlag": "Y",
+                "ctnReleasePrintFlag": "Y",
+                "ctnSize": "45",
+                "ctnType": "GP",
+                "ctnrealseCtnId": "CRC-0000000000080968",
+                "ctnrealseId": "CRM-0000000000039778",
+                "yardCode": "CML2"
+            }
+        ]
+    },
+    {
+        "ctnCount": "1",
+        "ctnSizeType": "22GP",
+        "ctnrealseContainer": [
+            {
+                "ctnReleaseFlag": "Y",
+                "ctnReleasePrintFlag": "Y",
+                "ctnSize": "22",
+                "ctnType": "GP",
+                "ctnrealseCtnId": "CRC-0000000000080968",
+                "ctnrealseId": "CRM-0000000000039778",
+                "yardCode": "CML2"
+            },
+            {
+                "ctnReleaseFlag": "Y",
+                "ctnReleasePrintFlag": "Y",
+                "ctnSize": "22",
+                "ctnType": "GP",
+                "ctnrealseCtnId": "CRC-0000000000080968",
+                "ctnrealseId": "CRM-0000000000039778",
+                "yardCode": "CML2"
+            }
+        ]
+    }
+]

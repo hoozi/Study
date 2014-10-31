@@ -1,0 +1,37 @@
+<section id="yard-result">
+	<header class="app-subpage-header">
+		<nav class="left app-back">
+          <a href="#" class="button" data-icon="previous" data-target="back"></a>
+    	</nav>
+		<h1 class="title">箱源查询结果</h1>
+	</header>
+	<footer class="app-footer">
+		<a href="#list" data-target="article"  data-selected="selected" class="active" data-icon="list">列表</a>
+		<a href="#map" data-target="article" data-selected="selected" data-icon="map">地图</a>
+	</footer>
+	<div class="second-nav-wrap">
+		<div class="second-nav nav-next yard-no">
+			<span>共找到<b>22</b>个堆场</span>
+		</div>
+	</div>
+	<article class="active" data-scroll="true" id="list">
+		<div class="scroll-content">
+			<div id="yard-content">
+				<ul class="list app-list result-list news-list">
+					<li>
+						<a href="#news-detail?id={{id}}" data-target="section" data-selected="selected" data-icon="next">
+							<p>梅山码头堆场</p>
+							<p class="extra">200个</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</article>
+	<article id="map">
+		<div id="yard-map" class="inset-wrap full-map">map</div>
+	</article>
+</section>
+<script type="YBT-tmpl/text" id="voyage-templ">
+
+</script>

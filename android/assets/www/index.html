@@ -1,0 +1,88 @@
+<!DOCTYPE >
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>易步通</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/Jingle.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="section_container">
+    <section id="index" class="active">
+    	<header>
+			<h1 class="title">易步通</h1>
+		</header>
+		<footer class="app-footer">
+			<a href="#index_article" data-target="article"  data-selected="selected" class="active" data-icon="home">首页</a>
+			<a href="#news_article" data-target="article" data-selected="selected" data-icon="newspaper">新闻</a>
+			<a href="tel:0574-87209090" data-selected="selected" data-icon="phone" data-target="link">联系</a>
+		</footer>
+        <article class="active" id="index_article" data-scroll="true">
+            <div class="scroll-content index-scroll-content">
+	           <div class="grid app-grid">
+	               <a href="#delivery" data-target="section" data-selected="selected" class="col-1"><i class="ybticon delivery"></i>无纸放行</a>
+	               <a href="#ctnRelease" class="col-1" data-selected="selected" data-target="section"><i class="ybticon ctnRelease"></i>放箱查询</a>
+	               <a href="#yard" class="col-1" data-selected="selected" data-target="section"><i class="ybticon yard"></i>箱源查询</a>
+	               <a href="#clp" class="col-1" data-selected="selected" data-target="section"><i class="ybticon clp"></i>CLP查询</a>
+	           </div>
+	           <div class="grid app-grid">
+                   <a href="#voyage" class="col-1" data-selected="selected" data-target="section"><i class="ybticon voyage"></i>船期查询</a>
+                   <a href="#track?track=exportTrace" class="col-1" data-selected="selected" data-target="section"><i class="ybticon exp"></i>出口跟踪</a>
+               	   <a href="#track?track=importTrace" class="col-1" data-selected="selected" data-target="section"><i class="ybticon imp"></i>进口跟踪</a>
+               	   <a href="#GPS" class="col-1" data-selected="selected" data-target="section"><i class="ybticon gps"></i>集卡跟踪</a>
+	           </div>
+            </div>
+        </article>
+        <article id="news_article" class="article">
+        	<div class="second-nav-wrap" data-icon="next">
+        		<div class="news-nav second-nav nav-next" id="newsNav-scroll">
+					<div class="grid" id="news-grid">
+						<a href="#" data-category="1" data-selected="selected" class="col-1 active">新闻资讯</a>
+						<a href="#" data-category="2" data-selected="selected" class="col-1">通知公告</a>
+						<a href="#" data-category="3" data-selected="selected" class="col-1">图片新闻</a>
+						<a href="#" data-category="4" data-selected="selected" class="col-1">船公司公告</a>
+						<a href="#" data-category="5" data-selected="selected" class="col-1">紧急通知</a>
+						<a href="#" data-category="6" data-selected="selected" class="col-1">码头公告</a>
+					</div>
+				</div>
+        	</div>
+			<div id="news-scroll" class="news-scroll scroll" data-scroll="true">
+				<div class="scroll-content index-scroll-content">
+					<div id="news-content">
+						<ul class="list app-list result-list news-list" id="news-list"></ul>
+					</div>
+				</div>	
+			</div>
+        </article>
+        
+    </section>
+</div>
+<script type="YBT-tmpl/text" id="news-templ">
+{{#each list}}
+	<li>
+		<a href="#news-detail?id={{id}}" data-target="section" data-selected="selected" data-icon="next">
+			<p>{{title}}</p>
+			<p class="extra">{{createDate}}</p>
+		</a>
+	</li>
+{{/each}}
+</script>
+<!-- <script type="text/javascript" src="cordova.js"></script> -->
+<!-- lib -->
+<script type="text/javascript" src="js/libs/zepto.js"></script>
+<script type="text/javascript" src="js/libs/findData.js"></script>
+<script type="text/javascript" src="js/libs/iscroll.js"></script>
+<script type="text/javascript" src="js/libs/handlebars.min.js"></script>
+<script type="text/javascript" src="js/libs/Jingle.debug.js"></script>
+<script type="text/javascript" src="js/libs/zepto.touch2mouse.js"></script>
+<script language="javascript" src="http://api.map.baidu.com/api?type=quick&v=2.0&ak=2245634c574cf17df021a2d11e8deb1e"></script>
+<!--<script type="text/javascript" src="js/lib/JChart.debug.js"></script> -->
+<!--- app --->
+<script type="text/javascript" src="js/app/app.js"></script>
+<!--<script src="http://192.168.2.153:8080/target/target-script-min.js#anonymous"></script>-->
+</body>
+</html>

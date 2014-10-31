@@ -1,0 +1,34 @@
+{
+    "flag": 1,
+    "list": [
+        {
+            "agent": "TDNB",
+            "agentcode": "SHTDNB",
+            "billno": "ANGBBKMHDM025712536B",
+            "compareFlag": "N",
+            "compareTime": "2014-10-21 10:12",
+            "containerno": "IRSU4981534",
+            "customFlag": "Y",
+            "customRemark": "",
+            "envessel": "ABYAN",
+            "id": 1462493,
+            "ifcsumFlag": "Y",
+            "linecode": "",
+            "matou": "BLCTMS",
+            "matouFlag": "N",
+            "matouRemark": "",
+            "passFlag": "Y",
+            "reason": "",
+            "receivetime": "2014-10-21 10:04",
+            "remark": "放行成功",
+            "sendEnable": "N",
+            "sendFlag": "N",
+            "sendTime": "",
+            "sizetype": "40HC",
+            "sldFlag": "N",
+            "sldRemark": "缺少电子口岸三联单。",
+            "unvessel": "UN9349667",
+            "voyage": "0257W"
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "ctnFlag": "m",
+    "orderTranscationCtn": {
+        "billNo": "COSU6098992890",
+        "ctnFlagD": "",
+        "ctnFlagL": "",
+        "ctnFlagT": "",
+        "ctnNo": "CBHU8108483",
+        "ctnOwner": "COS",
+        "ctnSealno": "945522",
+        "ctnSizetype": "45GP",
+        "ctnStatus": "F",
+        "ctnWeight": 7882,
+        "id": null,
+        "orderId": ""
+    },
+    "vesselCname": "",
+    "vesselEname": "",
+    "vesselUncode": "",
+    "voyage": "",
+    "traceinfo": [
+        {
+            "id": null,
+            "nodeCode": "E_IN_GATE_ZP",
+            "nodeContent": "成功",
+            "nodeCtnNo": "CBHU8108483",
+            "nodeDate": "2014-10-20 19:36",
+            "nodeDesc": "乍浦进门",
+            "nodeLocation": "ZIT",
+            "nodeRemark": "YONGJIA6/4A21S",
+            "nodeSequence": 2,
+            "orderId": ""
+        },
+        {
+            "id": null,
+            "nodeCode": "E_IN_GATE_ZP_T",
+            "nodeContent": "成功",
+            "nodeCtnNo": "CBHU8108483",
+            "nodeDate": "2014-10-20 19:36",
+            "nodeDesc": "乍浦转船",
+            "nodeLocation": "ZIT",
+            "nodeRemark": "GANGHONG21/4062S",
+            "nodeSequence": 3,
+            "orderId": ""
+        },
+        {
+            "id": null,
+            "nodeCode": "E_ELEC_DECLARE_HZ",
+            "nodeContent": "已申报",
+            "nodeCtnNo": "",
+            "nodeDate": "2014-10-21 14:43",
+            "nodeDesc": "电子申报",
+            "nodeLocation": "嘉兴海关驻嘉善办事处",
+            "nodeRemark": "YONGJIA6/4A21S",
+            "nodeSequence": 4,
+            "orderId": ""
+        },
+        {
+            "id": null,
+            "nodeCode": "E_COMPUTER_AUDIT_HZ",
+            "nodeContent": "现场交单",
+            "nodeCtnNo": "",
+            "nodeDate": "2014-10-21 14:44",
+            "nodeDesc": "电脑审单",
+            "nodeLocation": "嘉兴海关驻嘉善办事处",
+            "nodeRemark": "YONGJIA6/4A21S",
+            "nodeSequence": 5,
+            "orderId": ""
+        },
+        {
+            "id": null,
+            "nodeCode": "E_LOCAL_RECEIVE_HZ",
+            "nodeContent": "接单通过",
+            "nodeCtnNo": "",
+            "nodeDate": "2014-10-21 15:43",
+            "nodeDesc": "现场交单",
+            "nodeLocation": "嘉兴海关驻嘉善办事处",
+            "nodeRemark": "YONGJIA6/4A21S",
+            "nodeSequence": 7,
+            "orderId": ""
+        },
+        {
+            "id": null,
+            "nodeCode": "E_FORM_PASS_HZ",
+            "nodeContent": "单证放行",
+            "nodeCtnNo": "",
+            "nodeDate": "2014-10-21 16:06",
+            "nodeDesc": "单证放行",
+            "nodeLocation": "嘉兴海关驻嘉善办事处",
+            "nodeRemark": "YONGJIA6/4A21S",
+            "nodeSequence": 9,
+            "orderId": ""
+        },
+        {
+            "id": null,
+            "nodeCode": "E_LOAD_CTN_ZP",
+            "nodeContent": "成功",
+            "nodeCtnNo": "CBHU8108483",
+            "nodeDate": "2014-10-22 10:12",
+            "nodeDesc": "乍浦装船",
+            "nodeLocation": "ZIT",
+            "nodeRemark": "GANGHONG21/4062S",
+            "nodeSequence": 11,
+            "orderId": ""
+        }
+    ]
+}
